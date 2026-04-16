@@ -1,0 +1,21 @@
+# Test files
+*.test.js
+integration-test.js
+
+# Documentation (keep README.md)
+OVERVIEW.md
+INDEX.md
+SESSION-*.md
+README-SESSION-*.md
+
+# Development files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

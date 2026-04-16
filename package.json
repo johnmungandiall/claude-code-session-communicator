@@ -1,11 +1,11 @@
 {
   "name": "@ruflo/mcp-session-communicator",
   "version": "1.0.0",
-  "description": "MCP server for cross-session communication and state management",
+  "description": "MCP server for cross-session communication and state management in Claude Code",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "session-communicator": "./index.js"
+    "session-communicator": "./cli.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -16,10 +16,6 @@
     "demo": "node demo.js",
     "hooks:install": "node hooks.js install",
     "hooks:uninstall": "node hooks.js uninstall",
-    "bridge:import": "node bridge.js import",
-    "bridge:export": "node bridge.js export",
-    "bridge:sync": "node bridge.js sync",
-    "bridge:list": "node bridge.js list",
     "install": "node install.js",
     "postinstall": "node install.js"
   },
@@ -28,8 +24,23 @@
     "session",
     "communication",
     "state-management",
-    "ruflo"
+    "claude-code",
+    "ruflo",
+    "cross-session",
+    "messaging",
+    "coordination"
   ],
+  "author": "RuFlo Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruvnet/ruflo.git",
+    "directory": "src/mcp-servers/session-communicator"
+  },
+  "bugs": {
+    "url": "https://github.com/ruvnet/ruflo/issues"
+  },
+  "homepage": "https://github.com/ruvnet/ruflo#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "commander": "^12.0.0",
@@ -40,5 +51,16 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "bridge.js",
+    "hooks.js",
+    "install.js",
+    "demo.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ]
 }
