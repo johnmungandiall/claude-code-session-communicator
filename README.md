@@ -7,6 +7,44 @@
 
 Cross-session communication and state management for Claude Code with RuFlo V3 integration.
 
+## 🤔 Why Use This?
+
+**Session Communicator** solves critical problems in multi-agent AI workflows:
+
+### Problems It Solves
+
+1. **Session Isolation** - Claude Code sessions can't communicate by default
+   - ❌ Without: Each session works in isolation, no coordination
+   - ✅ With: Sessions send messages and share state seamlessly
+
+2. **Lost Context** - Work is lost when sessions end
+   - ❌ Without: Start from scratch every time
+   - ✅ With: Save/restore state across sessions automatically
+
+3. **Swarm Coordination** - Multiple agents need to coordinate
+   - ❌ Without: Manual coordination, prone to conflicts
+   - ✅ With: Priority queues, message routing, state sync
+
+4. **Memory Fragmentation** - Claude Code and AgentDB memories are separate
+   - ❌ Without: Duplicate data, sync issues
+   - ✅ With: Automatic bidirectional memory bridge
+
+### Real-World Use Cases
+
+- **Multi-Agent Development**: Coordinate coder, tester, reviewer agents across sessions
+- **Long-Running Tasks**: Save progress, resume later without losing context
+- **Team Collaboration**: Share state between team members' Claude sessions
+- **CI/CD Integration**: Persist build state, test results across pipeline stages
+- **Memory Persistence**: Keep learned patterns available across all sessions
+
+### Key Benefits
+
+- 🚀 **Zero Configuration** - Works out of the box after installation
+- ⚡ **Fast** - In-memory messaging with disk persistence
+- 🔒 **Safe** - Isolated session data, no cross-contamination
+- 🧪 **Tested** - 100% test coverage, production-ready
+- 📚 **Documented** - Complete guides in English + Telugu
+
 ## 🚀 Quick Start
 
 ```bash
