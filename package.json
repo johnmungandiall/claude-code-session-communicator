@@ -1,0 +1,44 @@
+{
+  "name": "@ruflo/mcp-session-communicator",
+  "version": "1.0.0",
+  "description": "MCP server for cross-session communication and state management",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "session-communicator": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "node integration-test.js",
+    "demo": "node demo.js",
+    "hooks:install": "node hooks.js install",
+    "hooks:uninstall": "node hooks.js uninstall",
+    "bridge:import": "node bridge.js import",
+    "bridge:export": "node bridge.js export",
+    "bridge:sync": "node bridge.js sync",
+    "bridge:list": "node bridge.js list",
+    "install": "node install.js",
+    "postinstall": "node install.js"
+  },
+  "keywords": [
+    "mcp",
+    "session",
+    "communication",
+    "state-management",
+    "ruflo"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "commander": "^12.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
